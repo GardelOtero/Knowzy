@@ -198,3 +198,21 @@ h1 {
     .auth-button .icon {
         margin-right: 10px;
     }
+/* Media queries para ajustes más finos en pantallas muy pequeñas */
+@media (max-height: 700px) {
+    .title-large, .title-outline {
+        font-size: 3.5rem; /* Reduce ligeramente el tamaño del título en pantallas muy pequeñas */
+    }
+
+    .title-filled {
+        font-size: 3rem; /* Reduce el tamaño del texto relleno */
+    }
+
+    .glasses-legs {
+        max-height: 250px; /* Ajusta la imagen para pantallas más pequeñas */
+    }
+
+    .image-container {
+        margin-bottom: 50%;
+    }
+}
