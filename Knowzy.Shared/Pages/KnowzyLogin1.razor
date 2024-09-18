@@ -1,0 +1,47 @@
+﻿@page "/login"
+
+<div class="login-container">
+    <div class="login-content">
+        <h1 class="title-large">KNOWZY</h1>
+        <h1 class="title-outline">KNOWZY</h1>
+        <h1 class="title-large">KNOWZY</h1>
+
+        <div class="image-container">
+            <img src="_content/Knowzy.Shared/imagenes/knowzy_3.svg" class="glasses-legs" style="height:350px; width:300px;" alt="Main Image" />
+        </div>
+
+        <div class="button-container">
+            <button class="auth-button">
+                <img src="_content/Knowzy.Shared/imagenes/google.svg" style="height:15px; width:15px;" alt="Icon" />
+                Continue with Google
+            </button>
+            <button class="auth-button">
+                <img src="_content/Knowzy.Shared/imagenes/apple.svg" style="height:15px; width:15px;" alt="Icon" />
+                 Continue with Apple
+            </button>
+            <button class="auth-button">
+                <img src="_content/Knowzy.Shared/imagenes/email.svg" style="height:15px; width:15px;" alt="Icon" />
+                 Continue with Email
+            </button>
+            <a class="already-account" href="/login">Already have an account</a>
+        </div>
+
+    </div>
+</div>
+
+@code {
+    private void LoginWithGoogle()
+    {
+        // Lógica para iniciar sesión con Google
+    }
+
+    private void LoginWithApple()
+    {
+        // Lógica para iniciar sesión con Apple
+    }
+
+    private void LoginWithEmail()
+    {
+        // Lógica para iniciar sesión con Correo electrónico
+    }
+}

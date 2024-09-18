@@ -1,0 +1,46 @@
+﻿@inject NavigationManager NavigationManager
+
+<div class="carousel-wrapper">
+    <div class="carousel-item" style="background-color: @GetBackgroundColor();">
+        <img src="_content/Knowzy.Shared/imagenes/knowzy_2.svg" alt="Main Image" />
+    </div>
+</div>
+
+<div class="carousel-controls">
+    <button class="control-button" @onclick="Previous"></button>
+    <button class="control-button" @onclick="Next"></button>
+</div>
+
+@code {
+    private int _currentIndex = 0;
+
+    private List<string> BackgroundColors = new List<string>
+    {
+        "#FF8E00",
+        "#FFE554",
+        "#376BFF"
+    };
+
+    private void Next()
+    {
+        // Si estamos en el último color, redirigir a la página de login
+        if (_currentIndex == BackgroundColors.Count - 1)
+        {
+            NavigationManager.NavigateTo("/login");
+        }
+        else
+        {
+            _currentIndex = (_currentIndex + 1) % BackgroundColors.Count;
+        }
+    }
+
+    private void Previous()
+    {
+        _currentIndex = (_currentIndex - 1 + BackgroundColors.Count) % BackgroundColors.Count;
+    }
+
+    private string GetBackgroundColor()
+    {
+        return BackgroundColors[_currentIndex];
+    }
+}

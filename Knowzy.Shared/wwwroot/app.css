@@ -1,5 +1,28 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Komet';
+    src: url('/fonts/Komet_Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Komet';
+    src: url('/fonts/Komet_Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Komet', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700; /* Para asegurar el estilo Bold */
 }
 
 a, .btn-link {
