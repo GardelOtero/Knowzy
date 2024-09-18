@@ -99,7 +99,7 @@
 
 .glasses-legs {
     position: absolute; /* Permite mover la imagen sobre el texto */
-    top: 26%; /* Ajusta esta propiedad para posicionar la imagen correctamente */
+    top: 28%; /* Ajusta esta propiedad para posicionar la imagen correctamente */
     left: 50%;
     transform: translateX(-50%); /* Centra la imagen horizontalmente */
     z-index: 2; /* Se asegura que la imagen esté delante del texto */
@@ -112,9 +112,9 @@
 .already-account {
     display: block;
     margin-top: 15px;
-    color: #007bff;
-    text-decoration: none;
-    font-size: 0.9rem;
+    color: #272727;
+    text-decoration: underline;
+    font-size: 0.7rem;
 }
 
     .already-account:hover {
@@ -128,6 +128,7 @@
     align-items: center; /* Centrar los botones horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     width: 100%; /* Abarcar todo el ancho del viewport */
+    height: 250px;
 }
 
 /* Botones con ancho del 70% */
@@ -135,8 +136,8 @@
     width: 70%;
     padding: 10px 20px;
     margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #272727;
+    color: #272727;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,4 +169,52 @@
     .image-container {
         margin-bottom: 50%;
     }
+}
+.auth-input {
+    width: 70%; /* Igual ancho que los botones */
+    padding: 10px;
+    border: 1px solid #272727;
+    font-size: 1rem;
+    color: #272727;
+    text-align: center;
+    display: block; /* Asegura que los campos estén uno debajo del otro */
+}
+.traditional-login-container {
+    display: flex;
+    flex-direction: column; /* Apilar los botones verticalmente */
+    align-items: center; /* Centrar los botones horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    width: 100%; /* Abarcar todo el ancho del viewport */
+    height: 250px;
+}
+/* Contenedor para los enlaces "Create an account" y "Forget the password?" */
+.account-options {
+    display: flex;
+    justify-content: space-between; /* Alinea los enlaces a los lados del contenedor */
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 70%; /* Coincide con el ancho de los campos y botones */
+}
+
+/* Estilo de los enlaces */
+.account-link {
+    color: #272727;
+    text-decoration: underline;
+    font-size: 0.75rem;
+}
+    .account-link:hover {
+        text-decoration: underline;
+    }
+/* Botón de color amarillo */
+.yellow-button {
+    background-color: #FFE554;
+    color: #272727;
+    border: none;
+}
+.plogin {
+    margin: 0;
+    width: 70%; /* Coincide con el ancho de los inputs */
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-size: 0.8rem;
+    color: #272727;
 }
