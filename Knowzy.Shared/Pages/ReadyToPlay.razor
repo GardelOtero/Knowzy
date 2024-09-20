@@ -1,0 +1,32 @@
+﻿@page "/Readytoplay"
+@inject NavigationManager NavigationManager
+
+<NavBar/>
+<div class="game-container">
+    <div class="game-content">
+        <!-- Título principal -->
+        <h1 class="main-title">Ready to play?</h1>
+
+        <!-- Botones de acción -->
+        <button class="game-button blue-button" @onclick="CreateGame">Create your own game</button>
+        <button class="game-button yellow-button">Choose a knowzy template</button>
+        <button class="game-button white-button">Join a public game</button>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="game-footer">
+        <div class="footer-content">
+            <span class="footer-logo">KNOWZY</span>
+            <span class="footer-logo" style="font-weight: 100; font-size: 1.5rem">|</span>
+            <span class="footer-text"> Its okay to be a know it all</span>
+        </div>
+    </footer>
+</div>
+
+@code {
+    private void CreateGame()
+    {
+        NavigationManager.NavigateTo("/NewGame");
+    }
+
+}

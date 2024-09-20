@@ -1,0 +1,46 @@
+﻿@page "/NewGame"
+<Navbar2/>
+<div class="event-page">
+    <!-- Image with action icon -->
+    <div class="event-image-container">
+        <img src="_content/Knowzy.Shared/imagenes/champions.png" alt="Event Image" class="event-image">
+        <button class="image-action-btn">
+            <img src="_content/Knowzy.Shared/imagenes/action-icon.png" alt="Action" class="action-icon">
+        </button>
+    </div>
+
+    <!-- Event Details -->
+    <div class="event-details">
+        <input type="text" class="event-title" placeholder="Name of the event">
+        <textarea class="event-description" placeholder="Event description"></textarea>
+
+        <!-- Event Timings -->
+        <div class="event-timing">
+            <div class="timing-row">
+                <span class="timing-label">Event start !</span>
+                <span class="timing-value">Saturday, August 17</span>
+                <span class="timing-time">23:00 GMT</span>
+            </div>
+            <div class="timing-row">
+                <span class="timing-label">Event end !</span>
+                <span class="timing-value">Saturday, August 17</span>
+                <span class="timing-time">23:00 GMT</span>
+            </div>
+            <div class="timing-row">
+                <span class="timing-label">Last day to answer</span>
+                <span class="timing-value">Friday, August 16</span>
+                <span class="timing-time">23:30 GMT</span>
+            </div>
+        </div>
+
+        <!-- Multiple Days Checkbox -->
+        <div class="multiple-days">
+            <input type="checkbox" id="multiple-days" name="multiple-days">
+            <label for="multiple-days">Multiple days</label>
+        </div>
+    </div>
+</div>
+
+@code {
+
+}

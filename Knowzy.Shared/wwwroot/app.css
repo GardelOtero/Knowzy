@@ -16,12 +16,18 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'PassionOne';
+    src: url('/fonts/PassionOne_Regular') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 html, body {
     font-family: 'Komet', sans-serif;
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'PassionOne', sans-serif !important;
     font-weight: 700; /* Para asegurar el estilo Bold */
 }
 

@@ -1,4 +1,5 @@
 ﻿@page "/traditionalogin"
+@inject NavigationManager NavigationManager
 
 <div class="login-container">
     <div class="login-content">
@@ -18,18 +19,22 @@
 
             <!-- Contenedor para los enlaces "Create an account" y "Forget the password?" -->
             <div class="account-options">
-                
+
                 <a class="account-link" href="/create-account">Create an account</a>
-                
+
                 <a class="account-link" href="/forgot-password">Forget the password?</a>
             </div>
 
-            <button class="auth-button yellow-button">Continue</button>
+            <button class="auth-button yellow-button" @onclick="Continue">Continue</button>
         </div>
 
     </div>
 </div>
 
 @code {
+    private void Continue()
+    {
+        NavigationManager.NavigateTo("/Readytoplay");
+    }
 
 }
